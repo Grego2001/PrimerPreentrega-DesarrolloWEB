@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #060505;
+}
+
+#header{
+    height: 110px;
+    background-color: #9058f8;
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+}
+
+.logo{
+    width:75px;
+    height:75px;
+    position: relative;
+    top: 17px;
+    left: 15px;
+}
+
+.titulo{
+    font-size: 75px;
+    display: inline-block;
+    position: absolute;
+    margin-left: 10px;
+    color:rgb(5, 1, 8);
+}
+
+.principal{
+    width: 1350px;
+    height: 720px;
+}
+
+.item-barra{
+    display: inline-block;
+    padding-left: 90px;
+    margin-right: 55px;
+    font-size: 17px;
+}
+
+.barra{
+    text-align: right;
+    padding-top: 45px;
+}
+
+.subtitulo{
+    width: 900px;
+    height: 200px;
+    margin-top: 90px;
+}
+
+.subtitulo h2{
+    font-size: 55px;
+    width: 1050px;
+    height: 90px;
+    margin-top: 50px;
+    margin-left: 10px;
+    color: #9058f8;
+}
+
+.subtitulo h3{
+    font-size: 25px;
+    width: 850px;
+    height: 90px;
+    margin-left: 10px;
+    color: #9b65ff;
+    padding-top: 150px;
+}
+
+.video{
+    width: 400px;
+    position: relative;
+    bottom: 440px;
+    left: 1030px;  
+}
+
+
+.item-barra a{
+    text-decoration: none;
+    padding: 10px;
+    color: rgb(45, 28, 133);  
+}
+
+.opciones{
+    width: 600px;
+    height: 170px;
+    padding-left: 50px;
+    font-size: 16px;
+    margin-top: 200px;
+    margin-left: 150px;
+}
+
+.opciones a{
+    padding-left: 30px;
+    color: rgb(93, 65, 236);
+    text-decoration: none;
+    border: 2px solid rgb(97, 65, 255);
+    padding: 10px;
+}
+
+.detalles{
+    margin-right: 75px;
+    width: 200px;
+    height: 200px;
+}
+
+.inversion{
+    margin-left: 75px;
+    width: 200px;
+}
+
+.submenu{
+    width: 420px;
+    height: 120px;
+    font-size: 15px;
+}
+
+.sublista{
+    list-style-type: none;
+    margin: 30px;
+    text-align: center;
+    padding-left: 220px;
+    width: 500px;
+
+}
+
+.sublista a{
+    text-decoration: none;
+    border: 2px solid rgb(97, 65, 255);
+    padding: 7px;
+    color: rgb(97, 65, 255);
+}
+
+.derechos{
+    color: rgb(45, 28, 133);
+    text-align: center;
+    font-size: 20px;
+    position: relative;
+    top: 100px;
+}
+
+
+footer{
+    background-color: #9058f8;
+    height: 200px;
+}
+
+.whatsapp{
+    width: 120px;
+    height: 50px;
+    position: fixed;
+    bottom: 30px;
+    right: 5px;
+}
+
+.whatsapp a{
+    z-index: 100;
+}
+
+.whatsappImg{
+    width: 50px;
+    height: 50px;
+}
+
+/* servicios */
+.servicios-opciones{
+    width: 900px;
+    height: 400px;
+}
+
+.subtitulo-servicios{
+    width: 700px;
+    height: 50px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.subtitulo-servicios h2{
+    font-size: 60px;
+    width: 700px;
+    color: #9058f8;
+}
+.foto{
+    text-align: right;
+    position: relative;
+    bottom: 280px;
+    right: 180px;
+    z-index: -5;
+}
+.opcionesInversion{
+    width: 900px;
+    height: 200px;
+    
+}
+
+.titulo-opcionesInversion{
+    font-size: 27px;
+    color: #9058f8;
+}
+
+.parrafo-opcionesInversion{
+    font-size: 20px;
+    color: rgb(97, 65, 255);
+}
+
+.tablaprincipal{
+    width: 700px;
+    height: 300px;
+}
+
+.fotonovedades{
+    width: 1250px;
+    height: 400px;
+    margin-top: 100px;
+    position: relative;
+    bottom: 280px;
+    left: 900px;
+    z-index: -5;
+}
+
+.subtitulo-novedades{
+    font-size: 50px;
+    margin-top: 90px;
+    margin-left: 180px;
+    color: #9058f8;
+}
+
+.lista-novedades{
+    width: 600px;
+    height: 400px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.lista-novedades li{
+    width: 600px;
+    height: 100px;
+    font-size: 25px;
+    margin-left: 150px;
+    margin-top: 50px;
+    color:#9058f8;
+}
+
+.subtitulo-preguntas{
+    font-size: 45px;
+    margin-top: 150px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    color: #9058f8;
+}
+
+.main-preguntas{
+    width: 1100px;
+    height: 500px;
+}
+
+.lista-ordenada{
+    width: 900px;
+    height: 500px;
+}
+.lista-ordenada li{
+    font-size: 25px;
+    margin-left: 80px;
+    color: #9058f8;
+}
+
+.clase-faq{
+    width: 400px;
+    position: relative;
+    bottom: 540px;
+    left: 1030px;
+}
+
+/* EL HTML QUE SE LLAMA CONTACTO NO TIENE ESTILO */
