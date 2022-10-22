@@ -11,275 +11,197 @@ html{
 body{
     font-family: 'Montserrat', sans-serif;
     background-color: #060505;
+
+}
+
+.logo{
+    width: 8rem;
+    transform: translate(1rem, 1.5rem);
+}
+
+.whatsappImg{
+    width: 5rem;
+    height: 50px;
+    position: fixed;
+    bottom: 30px;
+    right: 15px;
+}
+
+.cuerpo{
+    display: grid;
+    grid-template-columns: 1fr 0.7fr;
+    grid-template-rows: 1.8fr 3fr 3fr 3fr 3fr 1.8fr;
+    grid-template-areas:
+    "header header"
+    "principal video"
+    "contenedor video"
+    "contenedor2 video"
+    "contenedor3 video"
+    "footer footer"
 }
 
 #header{
-    height: 110px;
+    grid-area: header;
+    display: flex;
+    justify-content: space-around;
     background-color: #9058f8;
     position: sticky;
     top: 0px;
     z-index: 1000;
 }
 
-.logo{
-    width:75px;
-    height:75px;
-    position: relative;
-    top: 17px;
-    left: 15px;
-}
-
-.titulo{
-    font-size: 75px;
-    display: inline-block;
-    position: absolute;
-    margin-left: 10px;
-    color:rgb(5, 1, 8);
-}
-
-.principal{
-    width: 1350px;
-    height: 720px;
-}
-
-.item-barra{
-    display: inline-block;
-    padding-left: 90px;
-    margin-right: 55px;
-    font-size: 17px;
-}
-
-.barra{
-    text-align: right;
-    padding-top: 45px;
-}
-
-.subtitulo{
-    width: 900px;
-    height: 200px;
-    margin-top: 90px;
-}
-
 .subtitulo h2{
-    font-size: 55px;
-    width: 1050px;
-    height: 90px;
-    margin-top: 50px;
-    margin-left: 10px;
+    grid-area: principal;
+    font-size: 5.5rem;
+    margin: 3rem;
+    text-align: center;
     color: #9058f8;
 }
 
-.subtitulo h3{
-    font-size: 25px;
-    width: 850px;
-    height: 90px;
-    margin-left: 10px;
+.subtitulo2 h3{
+    grid-area: contenedor;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 2rem;
     color: #9b65ff;
-    padding-top: 150px;
-}
-
-.video{
-    width: 400px;
-    position: relative;
-    bottom: 440px;
-    left: 1030px;  
-}
-
-
-.item-barra a{
-    text-decoration: none;
-    padding: 10px;
-    color: rgb(45, 28, 133);  
-}
-
-.opciones{
-    width: 600px;
-    height: 170px;
-    padding-left: 50px;
-    font-size: 16px;
-    margin-top: 200px;
-    margin-left: 150px;
-}
-
-.opciones a{
-    padding-left: 30px;
-    color: rgb(93, 65, 236);
-    text-decoration: none;
-    border: 2px solid rgb(97, 65, 255);
-    padding: 10px;
-}
-
-.detalles{
-    margin-right: 75px;
-    width: 200px;
-    height: 200px;
-}
-
-.inversion{
-    margin-left: 75px;
-    width: 200px;
-}
-
-.submenu{
-    width: 420px;
-    height: 120px;
-    font-size: 15px;
-}
-
-.sublista{
-    list-style-type: none;
-    margin: 30px;
-    text-align: center;
-    padding-left: 220px;
-    width: 500px;
-
-}
-
-.sublista a{
-    text-decoration: none;
-    border: 2px solid rgb(97, 65, 255);
-    padding: 7px;
-    color: rgb(97, 65, 255);
-}
-
-.derechos{
-    color: rgb(45, 28, 133);
-    text-align: center;
-    font-size: 20px;
-    position: relative;
-    top: 100px;
-}
-
-
-footer{
-    background-color: #9058f8;
-    height: 200px;
-}
-
-.whatsapp{
-    width: 120px;
-    height: 50px;
-    position: fixed;
-    bottom: 30px;
-    right: 5px;
-}
-
-.whatsapp a{
-    z-index: 100;
-}
-
-.whatsappImg{
-    width: 50px;
-    height: 50px;
-}
-
-/* servicios */
-.servicios-opciones{
-    width: 900px;
-    height: 400px;
-}
-
-.subtitulo-servicios{
-    width: 700px;
-    height: 50px;
-    margin-top: 100px;
-    margin-bottom: 50px;
-}
-
-.subtitulo-servicios h2{
-    font-size: 60px;
-    width: 700px;
-    color: #9058f8;
-}
-.foto{
-    text-align: right;
-    position: relative;
-    bottom: 280px;
-    right: 180px;
-    z-index: -5;
-}
-.opcionesInversion{
-    width: 900px;
-    height: 200px;
     
 }
 
-.titulo-opcionesInversion{
-    font-size: 27px;
-    color: #9058f8;
+
+.video{
+    grid-area: video;
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    align-items: center;
 }
 
-.parrafo-opcionesInversion{
-    font-size: 20px;
+.opciones{
+    grid-area: contenedor2;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+
+.submenu{
+    grid-area: contenedor3;
+}
+
+.submenu ul{
+    display: flex;
+    justify-content:center;
+    align-content: center;
+    list-style-type: none;
+    margin: 4rem;
+    padding-right: 14rem;
+    gap: 1rem;
+}
+
+.footer{
+    grid-area: footer;
+    display: flex;
+}
+
+.titulo{
+    font-size: 7.5rem;
+}
+
+.textos-barra{
+    display: flex;
+    margin-top: 4rem;
+    list-style-type: none;
+
+}
+
+.item-barra a{
+    font-size: 2rem;
+    padding: 7rem;
+    text-decoration: none;
+    color: black;
+
+}  
+
+.opciones a{
+    font-size: 2.5rem;
+    padding: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(93, 65, 236);
+    border: .2rem solid rgb(97, 65, 255);
+    
+    
+}
+
+.sublista a{    
+    text-decoration: none;
+    border: .2rem solid rgb(97, 65, 255);
     color: rgb(97, 65, 255);
+    font-size: 1.5rem;
+    padding: 2rem;
 }
 
-.tablaprincipal{
-    width: 700px;
-    height: 300px;
+.video iframe{
+    width: 68rem;
+    height: 45.3rem;
 }
 
-.fotonovedades{
-    width: 1250px;
-    height: 400px;
-    margin-top: 100px;
-    position: relative;
-    bottom: 280px;
-    left: 900px;
-    z-index: -5;
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9058f8;
 }
 
-.subtitulo-novedades{
-    font-size: 50px;
-    margin-top: 90px;
-    margin-left: 180px;
-    color: #9058f8;
+.derechos{
+    font-size: 2.5rem;
+    color: #000000;
 }
 
-.lista-novedades{
-    width: 600px;
-    height: 400px;
-    margin-left: 50px;
-    margin-top: 50px;
-}
+@media screen and (max-width:1400px){
+    .cuerpo{
+        grid-template-columns: 1fr;
+        grid-template-rows: .5fr .5fr .5fr .5fr .5fr .5fr 0.2fr;
+        grid-template-areas:
+        "header"
+        "main"
+        "contenedor"
+        "video"
+        "opciones"
+        "opciones2"
+        "footer" ;
+    }
+    #header{
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
 
-.lista-novedades li{
-    width: 600px;
-    height: 100px;
-    font-size: 25px;
-    margin-left: 150px;
-    margin-top: 50px;
-    color:#9058f8;
-}
+    .main{
+        grid-area: main;
+    }
 
-.subtitulo-preguntas{
-    font-size: 45px;
-    margin-top: 150px;
-    margin-left: 50px;
-    margin-bottom: 50px;
-    color: #9058f8;
-}
+    .subtitulo2{
+        grid-area: contenedor;
+    }
+    .video{
+        grid-area: video;
+        justify-content: space-evenly;
+    }
+    
+    .opciones{
+        grid-area: opciones;
+        align-items: center;
+    }
 
-.main-preguntas{
-    width: 1100px;
-    height: 500px;
-}
+    .submenu{
+        grid-area: opciones2;
+    }
 
-.lista-ordenada{
-    width: 900px;
-    height: 500px;
+    .submenu ul{
+        flex-direction: column;
+        align-items: center;
+        line-height: 10rem;
+    }
 }
-.lista-ordenada li{
-    font-size: 25px;
-    margin-left: 80px;
-    color: #9058f8;
-}
-
-.clase-faq{
-    width: 400px;
-    position: relative;
-    bottom: 540px;
-    left: 1030px;
-}
-
-/* EL HTML QUE SE LLAMA CONTACTO NO TIENE ESTILO */
