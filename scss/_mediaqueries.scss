@@ -1,0 +1,79 @@
+@media screen and (max-width:992px) {
+    .titulo{
+        font-size: 4.5rem;
+}
+    .subtitulos h3{
+        font-size: 2rem;
+    }
+    .subtitulos{
+        margin: 2rem;
+    }
+    .cuerpo{
+        grid-template-columns: 1fr;
+        grid-template-rows: .5fr 1fr 1fr .5fr .5fr .5fr;
+        grid-template-areas:
+        "header"
+        "subtitulos"
+        "aside"
+        "links"
+        "links2"
+        "footer";
+    }
+    .aside{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* media queries servicios */
+    .cuerpo-servicios{
+        grid-template-columns: 1fr;
+        grid-template-rows: .5fr .3fr 1fr 1fr .2fr;
+        grid-template-areas:
+        "header"
+        "opciones"
+        "foto"
+        "pack"
+        "footer" ;
+    }
+    .contenedor-subtitulo{
+        justify-content: center;
+    }
+    /* media queries novedades  */
+    .cuerpo-novedades{
+        grid-template-columns: 1fr;
+        grid-template-rows: .5fr .3fr 1fr 1fr .4fr .3fr;
+        grid-template-areas:
+        "header"
+        "subtitulo"
+        "cuerpo"
+        "foto"
+        "texto"
+        "footer";
+    }
+    /* media queries preguntas */
+    .cuerpo-preguntas{
+        grid-template-columns: 1fr;
+        grid-template-rows: .5fr .3fr 1fr 1fr .4fr .3fr;
+        grid-template-areas:
+        "header"
+        "subtitulo"
+        "faq"
+        "foto"
+        "texto"
+        "footer" ;
+    }
+    .aside-preguntas img{
+        width: 30%;
+    }
+}
+@media screen and (max-width:650px){
+    .contenedor-subtitulo h2{
+        font-size: 4rem;
+    }
+    .titulo{
+        font-size: 2.5rem;
+    }
+    .textos-barra li a{
+        font-size: 1.3rem;
+    }
+}

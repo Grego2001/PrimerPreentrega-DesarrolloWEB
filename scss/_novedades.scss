@@ -1,0 +1,52 @@
+.cuerpo-novedades{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr 1.5fr 1fr;
+    grid-template-areas:
+    "header header"
+    "subtitulo foto"
+    "cuerpo foto"
+    "texto foto"
+    "footer footer";
+}
+.subtitulo-novedades{
+    grid-area: subtitulo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4.5rem;
+    color: $colorPrincipal;
+}
+.main-novedades{
+    grid-area: cuerpo;
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.lista-novedades{
+    li{
+        font-size: 2.1rem;
+        margin: 2rem;
+        padding: 2rem;
+        list-style: none;
+        font-weight: bold;
+        border: .35rem solid rgb(97, 65, 255);
+        color: $colorSecundario;
+    }
+}
+.fotonovedades{
+    grid-area: foto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.texto-novedades{
+    display: flex;
+    align-items: center;
+    margin: 2.5rem;
+    font-size: 1.1rem;
+    line-height: 2rem;
+    text-align: justify;
+    color: $colorPrincipal;
+}

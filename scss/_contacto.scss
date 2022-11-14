@@ -1,0 +1,66 @@
+
+.form{
+    width: 30rem;
+    margin: 0 auto;
+    background-color: #9b65ff;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    border-radius: .5rem;
+    justify-content: center;
+    align-items: center;
+    label{
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #000;
+    }
+}
+.campo{
+    margin: 1rem;
+}
+.texto-contacto{
+    font-size: 2.6rem;
+    text-align: justify;
+    margin: 2rem;
+    color: $colorPrincipal;
+}
+.main-contacto{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer" ;
+}
+.main-contacto{
+    grid-area: main ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.seccion-contacto{
+    margin: 2rem;
+    h3{
+        font-size: 1.8rem;
+        color: $colorSecundario
+    }
+}
+.link-contacto{
+    font-size: 2rem;
+    text-decoration: none;
+    color: $colorPrincipal;
+}
+.contenedor-preguntas{
+    margin: 2rem;
+    font-size: 1.5rem;
+    a{
+        color: $colorPrincipal;
+        text-decoration: none;
+    }
+}
+.lista-contacto{
+    list-style-type: none;
+    color: $colorPrincipal;
+}

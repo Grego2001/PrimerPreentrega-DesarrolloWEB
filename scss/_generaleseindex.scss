@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #060505;
+}
+.logo{
+    width: 8rem;
+    transform: translate(1rem, 1.5rem);
+}
+.whatsappImg{
+    width: 5rem;
+    position: fixed;
+    bottom: 30px;
+    right: 15px;
+}
+.cuerpo{
+    display: grid;
+    grid-template-columns: 1fr 0.7fr;
+    grid-template-rows: 1fr 2fr 2fr 2fr 1fr;
+    grid-template-areas:
+    "header header"
+    "subtitulos subtitulos"
+    "links aside"
+    "links2 aside"
+    "footer footer" ;
+}
+#header{
+    grid-area: header;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $colorPrincipal;
+    position: sticky;
+    top: 0px;
+    overflow-x: hidden;
+    z-index: 1000;
+}
+.titulo{
+    font-size: $tamaño*1.5;
+    color: #000;
+}
+.nav{
+    width: 100%;
+}
+.textos-barra{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    width: 100%;
+    margin: 2rem;
+    li{
+        a{
+            font-size: 2rem;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+    }
+}
+.nav{
+    width: 100%;
+}
+.main{
+    grid-area: subtitulos;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subtitulos{
+    h2{
+    font-size: 5.5rem;
+    margin: 2rem;
+    text-align: center;
+    color: $colorPrincipal;
+    }
+    h3{
+    font-size: 3rem;
+    text-align: center;
+    margin: 2rem;
+    color: $colorSecundario;
+    }
+}
+.links{
+    grid-area: links;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2rem;
+    a{
+        font-size: 2.5rem;
+        text-decoration: none;
+        font-weight: bold;
+        color: rgb(93, 65, 236);
+        border: .2rem solid rgb(97, 65, 255);
+        padding: 1rem;
+    }
+}
+.aside{
+    grid-area: aside;
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    align-items: center;
+    iframe{
+        width: 68rem;
+        height: 45.3rem;
+    }
+}
+.footer{
+    grid-area: footer;
+    background-color: #9058f8;
+    h6{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2.5rem;
+        color: #000000;
+    }
+}
+.links-secundarios{
+    grid-area: links2;
+    ul{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100%;
+    li{
+        font-size: 2.5rem;
+        list-style-type: none;
+        font-weight: bold;
+        border: .2rem solid rgb(97, 65, 255);
+        padding: 1rem;
+    }
+    }
+}
+.preguntas-frecuentes{
+    text-decoration: none;
+    color: rgb(93, 65, 236);
+}
+.contactanos{
+    text-decoration: none;
+    color: rgb(93, 65, 236);
+}
